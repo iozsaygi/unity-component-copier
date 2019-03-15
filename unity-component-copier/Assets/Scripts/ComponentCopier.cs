@@ -44,13 +44,17 @@
                 ComponentUtility.PasteComponentAsNew(clickedGameObject);
             }
 
-            components.Clear();
-            clickedGameObject = null;
+            Reset();
         }
 
         private static void AssignClickedObject() {
             // clicked object -> the one that is active on inspector.
             clickedGameObject = Selection.activeGameObject;
+        }
+
+        private static void Reset() {
+            components.Clear();
+            clickedGameObject = null;
         }
     }
 } // namespace UnityComponentCopier
