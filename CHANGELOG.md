@@ -1,5 +1,5 @@
 ## 19 March, 2019
-* Enhanced scripting structure.
+* Fixed scripting structure.
 
 ## 16 March, 2019
 * Added **"delete"** feature.
