@@ -8,5 +8,8 @@
 ## Installation
 Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts)** into your project.
 
+## Changelog
+View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
+
 ## License
 [MIT License](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
