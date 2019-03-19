@@ -6,7 +6,7 @@
 **U.C.C** allows you to copy components between game objects with simple process.
 
 ## Installation
-Import **[scripts]**(https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts)** to your project.
+Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts)** to your project.
 
 ## License
 [MIT License](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
