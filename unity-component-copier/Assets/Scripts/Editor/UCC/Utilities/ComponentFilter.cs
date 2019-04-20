@@ -1,4 +1,5 @@
-﻿namespace UnityComponentCopier.Utilities {
+﻿#if UNITY_EDITOR
+namespace UnityComponentCopier.Utilities {
     using System.Linq;
     using UnityEngine;
 
@@ -12,3 +13,4 @@
         }
     }
 }
+#endif

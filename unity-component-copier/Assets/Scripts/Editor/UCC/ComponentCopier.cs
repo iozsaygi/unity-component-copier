@@ -1,4 +1,5 @@
-﻿namespace UnityComponentCopier {
+﻿#if UNITY_EDITOR
+namespace UnityComponentCopier {
     using System.Collections.Generic;
     using System.Linq;
     using UnityEngine;
@@ -79,3 +80,4 @@
         }
     }
 } // namespace UnityComponentCopier
+#endif

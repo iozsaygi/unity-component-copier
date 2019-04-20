@@ -1,4 +1,5 @@
-﻿namespace UnityComponentCopier.Behaviours {
+﻿#if UNITY_EDITOR
+namespace UnityComponentCopier.Behaviours {
     using UnityEngine;
     using UnityComponentCopier.Utilities;
 
@@ -10,10 +11,10 @@
                 // filtering to avoid transform
                 components = ComponentFilter.Filter(components);
 
-                foreach (Component component in components) {
+                foreach (Component component in components)
                     DestroyImmediate(component);
-                }
             }
         }
     }
 }
+#endif
