@@ -1,6 +1,6 @@
 ## 21 April, 2019 (v1.2)
 * **Fixed bug** with the code **CS0246**. The bug was occurring when user tries to take a build of project inside Unity engine.
-Error was **_"UnityEditor' could not be found. Are you missing a using directive or an assembly reference?"_**
+Error was **_"UnityEditor' could not be found. Are you missing a using directive or an assembly reference?"._**
 
 * Stability tests with engine version **2019.1.0f2**.
 
