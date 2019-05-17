@@ -6,11 +6,8 @@
 **U.C.C** allows you to copy components between game objects with simple process.
 
 ## Installation
-* Create new folder called **"Editor"**.
-     * _Skip this step if you already have **"Editor"** folder._
-     * _Since scripts are guarded with ```#if UNITY_EDITOR [Code] #endif``` preprocessor directive you don't have to put scripts into           separate **"Editor"** folder but it's recommended._
-      
-* Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts/Editor/UCC)** into **"Editor"** folder.
+* Create new folder called **"Editor"** as a subfolder of your **"Scripts"** folder.
+* Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts/Editor/UCC)** script into folder that you just created.
 
 ## Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
