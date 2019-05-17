@@ -7,7 +7,7 @@
 
 ## Installation
 * Create new folder called **"Editor"** as a subfolder of your **"Scripts"** folder.
-* Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts/Editor/UCC)** script into folder that you just created.
+* Import **[scripts](https://github.com/iozsaygi/unity-component-copier/tree/master/unity-component-copier/Assets/Scripts/Editor/UCC)** into folder that you just created.
 
 ## Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
