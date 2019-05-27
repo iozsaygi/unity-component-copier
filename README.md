@@ -5,6 +5,16 @@
 ## About
 **U.C.U** allows you to perform handy operations for game objects.
 
+## Features
+* **Copy & Paste**
+    * _Copy or paste components between game objects._
+* **Delete** 
+    * _Deletes all the attached components on game object._
+* **Merge**
+    * _Work in progress._
+* **Separate**
+    * _Creates new game object for each attached component on selected game object._
+
 ## Installation
 * Create new folder called **"Editor"** as a subfolder of your **"Scripts"** folder.
 * Import **[script](https://github.com/iozsaygi/unity-component-utilities/tree/master/unity-component-utilities/Assets/Scripts/Editor/UCU)** into **"Editor"** folder that you just created.
