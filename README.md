@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#"><img src="https://github.com/iozsaygi/unity-component-copier/blob/master/media/usage-1.1.gif"/></a>
+  <a href="#"><img src="https://github.com/iozsaygi/unity-component-copier/blob/master/media/v1.3.gif"/></a>
 </p>
 
 ## About
@@ -9,7 +9,7 @@
 * **Copy & Paste**
     * _Copy or paste components between game objects._
 * **Delete** 
-    * _Deletes all the attached components on game object._
+    * _Deletes all the attached components on game object(s)._
 * **Separate**
     * _Creates new game object for each attached component on selected game object._
 
