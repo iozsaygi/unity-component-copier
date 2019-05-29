@@ -1,4 +1,5 @@
 ## 29 May, 2019 (v1.3)
+* Added new feature **"Merge"**.
 * Added new feature **"Separate"**.
 * Now **copy** and **paste** features are supporting multiple objects.
 
