@@ -9,7 +9,7 @@
 * **Copy & Paste**
     * _Copy or paste components between game objects._
 * **Delete** 
-    * _Deletes all the attached components on game object._
+    * _Deletes all the attached components on game object(s)._
 * **Separate**
     * _Creates new game object for each attached component on selected game object._
 
