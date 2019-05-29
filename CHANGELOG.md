@@ -8,9 +8,6 @@ Error was **_"UnityEditor' could not be found. Are you missing a using directive
 
 * Stability tests with engine version **2019.1.0f2**.
 
-## 19 March, 2019
-* Fixed scripting structure.
-
 ## 16 March, 2019 (v1.1)
 * Added **"delete"** feature.
 
