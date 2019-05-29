@@ -10,6 +10,8 @@
     * _Copy or paste components between game objects._
 * **Delete** 
     * _Deletes all the attached components on game object(s)._
+* **Merge**
+    * _Gets all the components of selected game objects and merges the components in new single game object._
 * **Separate**
     * _Creates new game object for each attached component on selected game object._
 
