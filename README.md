@@ -22,5 +22,9 @@
 ## Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
 
+## TODO
+[ ] Merge/Keep Old and Merge/Delete Old
+[ ] Separate/Keep Old and Separate/Delete Old
+
 ## License
 [MIT License](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
