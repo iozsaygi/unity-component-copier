@@ -11,5 +11,5 @@ Error was **_"UnityEditor' could not be found. Are you missing a using directive
 ## 16 March, 2019 (v1.1)
 * Added **"delete"** feature.
 
-## 13 Match, 2019 (v1.0)
+## 13 March, 2019 (v1.0)
 * Initial release.
