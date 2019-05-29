@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="#"><img src="https://github.com/iozsaygi/unity-component-copier/blob/master/media/usage-1.1.gif"/></a>
+  <a href="#"><img src="https://github.com/iozsaygi/unity-component-copier/blob/master/media/v1.3.gif"/></a>
 </p>
 
 ## About
