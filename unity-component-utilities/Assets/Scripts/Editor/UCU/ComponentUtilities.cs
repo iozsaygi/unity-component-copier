@@ -8,9 +8,6 @@ namespace UnityComponentUtilities {
 
     internal static class ComponentUtilities {
         private static List<Component> copiedComponents = new List<Component>();
-        // We need this because somehow Unity calls "MenuItem" functions more than once when working with
-        // multiple game objects. Let's just hope it will be fixed with new engine versions and we'll stop doing this workaround.
-        private static float functionCallInterval = 0.0f;
 
         [MenuItem("GameObject/Component Utilities/Copy", priority = 10)]
         private static void Copy() {
@@ -53,51 +50,95 @@ namespace UnityComponentUtilities {
                 UtilityBehaviour.Clear(activeTransforms[i].GetComponents<Component>());
         }
 
-        [MenuItem("GameObject/Component Utilities/Merge")]
-        private static void Merge() {
-            if (Time.unscaledTime.Equals(functionCallInterval))
-                return;
+        private static void Merge(Component[] components) {
+            Type[] componentsToMerge = new Type[components.Length];
 
-            if (Selection.transforms.Length > 1) {
-                List<Type> componentsToMerge = new List<Type>();
-
-                for (int i = 0; i < Selection.transforms.Length; i++) {
-                    Component[] components = Selection.transforms[i].GetComponents<Component>();
-
-                    for (int j = 0; j < components.Length; j++) {
-                        if (components[j] != null && components[j].GetType() != typeof(Transform))
-                            componentsToMerge.Add(components[j].GetType());
-                    }
-                }
-
-                new GameObject("Merged", componentsToMerge.ToArray());
+            for (int i = 0; i < components.Length; i++) {
+                if (components[i] != null && components[i].GetType() != typeof(Transform))
+                    componentsToMerge[i] = components[i].GetType();
             }
 
-            functionCallInterval = Time.unscaledTime;
+            new GameObject("Merged", componentsToMerge);
         }
 
-        [MenuItem("GameObject/Component Utilities/Separate")]
-        private static void Separate() {
-            if (Time.unscaledTime.Equals(functionCallInterval))
-                return;
+        [MenuItem("GameObject/Component Utilities/Merge/Keep Old")]
+        private static void MergeKeepOld() {
+            List<Component> components = new List<Component>();
 
             for (int i = 0; i < Selection.transforms.Length; i++) {
-                Component[] components = Selection.transforms[i].GetComponents<Component>();
+                Component[] componentsOnTransform = Selection.transforms[i].GetComponents<Component>();
 
-                for (int j = 0; j < components.Length; j++) {
-                    if (components[j] != null && components[j].GetType() != typeof(Transform)) {
-                        GameObject gameObject = new GameObject(components[j].GetType().Name);
-                        ComponentUtility.CopyComponent(components[j]);
-                        ComponentUtility.PasteComponentAsNew(gameObject);
-                    }
+                for (int j = 0; j < componentsOnTransform.Length; j++)
+                    components.Add(componentsOnTransform[j]);
+            }
+
+            Merge(components.ToArray());
+        }
+
+        [MenuItem("GameObject/Component Utilities/Merge/Delete Old")]
+        private static void MergeDeleteOld() {
+            List<Component> components = new List<Component>();
+            Transform[] transformsToDelete = new Transform[Selection.transforms.Length];
+
+            for (int i = 0; i < Selection.transforms.Length; i++) {
+                Component[] componentsOnTransform = Selection.transforms[i].GetComponents<Component>();
+
+                for (int j = 0; j < componentsOnTransform.Length; j++)
+                    components.Add(componentsOnTransform[j]);
+
+                transformsToDelete[i] = Selection.transforms[i];
+            }
+
+            Merge(components.ToArray());
+            UtilityBehaviour.Clear(transformsToDelete);
+        }
+
+        private static void Separate(Component[] components) {
+            for (int i = 0; i < components.Length; i++) {
+                if (components[i] != null && components[i].GetType() != typeof(Transform)) {
+                    GameObject gameObject = new GameObject(components[i].GetType().Name);
+                    ComponentUtility.CopyComponent(components[i]);
+                    ComponentUtility.PasteComponentAsNew(gameObject);
+                }
+            }
+        }
+
+        [MenuItem("GameObject/Component Utilities/Separate/Keep Old")]
+        private static void SeparateKeepOld() {
+            List<Component> components = new List<Component>();
+
+            for (int i = 0; i < Selection.transforms.Length; i++) {
+                Component[] componentsOnTransform = Selection.transforms[i].GetComponents<Component>();
+
+                for (int j = 0; j < componentsOnTransform.Length; j++) {
+                    if (componentsOnTransform[j] != null && componentsOnTransform[j].GetType() != typeof(Transform))
+                        components.Add(componentsOnTransform[j]);
                 }
             }
 
-            functionCallInterval = Time.unscaledTime;
+            Separate(components.ToArray());
         }
 
-        // To destroy components from game objects i needed to call "DestroyImmediate" function
-        // which can only be called from "MonoBehaviour" class. So this class exists only for calling "DestroyImmediate" function.
+        [MenuItem("GameObject/Component Utilities/Separate/Delete Old")]
+        private static void SeparateDeleteOld() {
+            List<Component> components = new List<Component>();
+            Transform[] transformsToDelete = new Transform[Selection.transforms.Length];
+
+            for (int i = 0; i < Selection.transforms.Length; i++) {
+                Component[] componentsOnTransform = Selection.transforms[i].GetComponents<Component>();
+
+                for (int j = 0; j < componentsOnTransform.Length; j++)
+                    components.Add(componentsOnTransform[j]);
+
+                transformsToDelete[i] = Selection.transforms[i];
+            }
+
+            Separate(components.ToArray());
+            UtilityBehaviour.Clear(transformsToDelete);
+        }
+
+        // To destroy components/objects i needed to call "DestroyImmediate" function
+        // which can only be called from "MonoBehaviour" class. So this class exists only for calling "Destroy" functions.
         internal sealed class UtilityBehaviour : MonoBehaviour {
 
             public static void Clear(Component[] components) {
@@ -105,6 +146,11 @@ namespace UnityComponentUtilities {
                     if (components[i] != null && components[i].GetType() != typeof(Transform))
                         DestroyImmediate(components[i]);
                 }
+            }
+
+            public static void Clear(Transform[] transforms) {
+                for (int i = 0; i < transforms.Length; i++)
+                    DestroyImmediate(transforms[i].gameObject);
             }
         }
     }
