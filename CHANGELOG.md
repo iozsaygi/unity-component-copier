@@ -1,3 +1,7 @@
+## 07 June, 2019 (v1.4)
+* Added **"Keep Old & Delete Old"** feature for Merge operation.
+* Added **"Keep Old & Delete Old"** feature for Separate operation.
+
 ## 29 May, 2019 (v1.3)
 * Added new feature **"Merge"**.
 * Added new feature **"Separate"**.
