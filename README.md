@@ -22,5 +22,9 @@
 ## Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
 
+## Additional Information
+* Due to weird editor bug in some versions of Unity engine, **Merge & Separate** functionalities may run more than once when working with multiple game objects. To avoid this bug you can use the menu that is located at the **top left** corner of Unity engine. (Instead of using right click menu)
+  * _[Here](https://issuetracker.unity3d.com/issues/menuitem-is-executed-more-than-once-when-multiple-objects-are-selected) is the link of issue about this topic._
+
 ## License
 [MIT License](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
