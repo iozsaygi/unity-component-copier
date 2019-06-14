@@ -3,7 +3,7 @@
 </p>
 
 ## About
-**U.C.U** allows you to perform handy operations for game objects.
+**U.C.U** allows you to perform handy operations for components on game objects.
 
 ## Features
 * **Copy & Paste**
