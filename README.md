@@ -27,4 +27,4 @@ View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHA
   * _[Here](https://issuetracker.unity3d.com/issues/menuitem-is-executed-more-than-once-when-multiple-objects-are-selected) is the link of issue about this topic._
 
 ## License
-[MIT License](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
+[MIT.](https://github.com/iozsaygi/unity-component-copier/blob/master/LICENSE).
