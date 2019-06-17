@@ -1,5 +1,16 @@
 ## 17 June, 2019 (v1.5)
 * **Bug fix:** The **"Merge & Separate"** functions were running more than once when working with multiple selected game objects. Fixed this bug with simple time check.
+```csharp
+[MenuItem("BlaBla/VoVo/DoDo")]
+private static void YourEditorFunction() {
+    if (Time.unscaledTime.Equals(functionTriggerInterval))
+        return;
+        
+    Debug.Log("This will run only once for multiple selected transforms/game objects!");
+
+    functionTriggerInterval = Time.unscaledTime;
+}
+```
 
 ## 07 June, 2019 (v1.4)
 * Added **"Keep Old & Delete Old"** features for Merge operation.
