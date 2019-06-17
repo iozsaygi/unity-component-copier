@@ -1,3 +1,6 @@
+## 17 June, 2019 (v1.5)
+* **Bug fix:** The **"Merge & Separate"** functions were running more than once when working with multiple selected game objects. Fixed this bug with simple time check.
+
 ## 07 June, 2019 (v1.4)
 * Added **"Keep Old & Delete Old"** features for Merge operation.
 * Added **"Keep Old & Delete Old"** features for Separate operation.
