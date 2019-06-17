@@ -1,6 +1,8 @@
 ## 17 June, 2019 (v1.5)
 * **Bug fix:** The **"Merge & Separate"** functions were running more than once when working with multiple selected game objects. Fixed this bug with simple time check.
 ```csharp
+private static float functionTriggerInterval = 0.0f;
+
 [MenuItem("BlaBla/VoVo/DoDo")]
 private static void YourEditorFunction() {
     if (Time.unscaledTime.Equals(functionTriggerInterval))
