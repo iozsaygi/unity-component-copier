@@ -8,6 +8,10 @@ namespace UnityComponentUtilities {
 
     internal static class ComponentUtilities {
         private static List<Component> copiedComponents = new List<Component>();
+        // We need this "functionTriggerInterval" because of weird editor bug.
+        // When working with "Merge & Separate" functions the code runs more than once for some reason.
+        // So this variable is here to make sure that we are running the code only once.
+        private static float functionTriggerInterval = 0.0f;
 
         [MenuItem("GameObject/Component Utilities/Copy", priority = 10)]
         private static void Copy() {
@@ -63,6 +67,9 @@ namespace UnityComponentUtilities {
 
         [MenuItem("GameObject/Component Utilities/Merge/Keep Old")]
         private static void MergeKeepOld() {
+            if (Time.unscaledTime.Equals(functionTriggerInterval))
+                return;
+
             List<Component> components = new List<Component>();
 
             for (int i = 0; i < Selection.transforms.Length; i++) {
@@ -73,6 +80,8 @@ namespace UnityComponentUtilities {
             }
 
             Merge(components.ToArray());
+
+            functionTriggerInterval = Time.unscaledTime;
         }
 
         [MenuItem("GameObject/Component Utilities/Merge/Delete Old")]
@@ -105,6 +114,9 @@ namespace UnityComponentUtilities {
 
         [MenuItem("GameObject/Component Utilities/Separate/Keep Old")]
         private static void SeparateKeepOld() {
+            if (Time.unscaledTime.Equals(functionTriggerInterval))
+                return;
+
             List<Component> components = new List<Component>();
 
             for (int i = 0; i < Selection.transforms.Length; i++) {
@@ -117,6 +129,8 @@ namespace UnityComponentUtilities {
             }
 
             Separate(components.ToArray());
+
+            functionTriggerInterval = Time.unscaledTime;
         }
 
         [MenuItem("GameObject/Component Utilities/Separate/Delete Old")]
