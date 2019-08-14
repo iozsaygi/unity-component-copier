@@ -1,9 +1,9 @@
 ## 14 August, 2019 (v1.6)
 * Added dialog messages to handle situations with errors.
-* Menu layout has been changed. </br>
-    - Added new parent directory called **"Common"** for **"Copy, Paste & Delete"** operations.
 * Added new feature **"Paste As Child".**
 * Added new feature "**Sort By Name**".
+* Menu layout has been changed. </br>
+    - Added new parent directory called **"Common"** for **"Copy, Paste & Delete"** operations.
 
 ## 17 June, 2019 (v1.5)
 * **Bug fix:** The **"Merge & Separate"** functions were running more than once when working with multiple selected game objects. Fixed this bug with simple time check.
