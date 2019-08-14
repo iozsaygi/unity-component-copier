@@ -14,7 +14,6 @@
     * _Gets all of the components from selected game objects and adds them into new single game object._
 * **Separate**
     * _Creates new game object for each attached component on selected game object._
-    
 * **Sort**
     * _Sort the components on game object(s) with the available sorting options._
 
