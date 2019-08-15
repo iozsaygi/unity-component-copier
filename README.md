@@ -24,5 +24,8 @@
 ### :pencil: Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
 
+### :link: Links
+* [Trello](https://trello.com/b/ToBkZnnr/unity-component-utilities)
+
 ### :thumbsup: License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
