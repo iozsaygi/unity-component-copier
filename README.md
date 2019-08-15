@@ -2,10 +2,10 @@
   <a href="#"><img src="https://github.com/iozsaygi/unity-component-copier/blob/master/media/showcase.gif"/></a>
 </p>
 
-### About
+### :star: About
 **U.C.U** allows you to perform handy operations for components on game objects.
 
-### Features
+### :beers: Features
 * **Copy & Paste**
     * _Copy or paste components between game objects._
 * **Delete** 
@@ -17,12 +17,12 @@
 * **Sort**
     * _Sort the components on game object(s) with the available sorting options._
 
-### Installation
+### :heavy_exclamation_mark: Installation
 * Create new folder called **"Editor"** as a subfolder of your **"Scripts"** folder.
 * Import the **[script](https://github.com/iozsaygi/unity-component-utilities/tree/master/unity-component-utilities/Assets/Scripts/Editor/UCU)** into **"Editor"** folder that you just created.
 
-### Changelog
+### :pencil: Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
 
-### License
+### :thumbsup: License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
