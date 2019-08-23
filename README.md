@@ -20,7 +20,5 @@
 * Import the **[script](https://github.com/iozsaygi/unity-component-utilities/blob/master/unity-component-utilities/Assets/Scripts/Editor/UCU/ComponentUtilities.cs)** into **"Editor"** folder that you just created.
 ### :pencil: Changelog
 View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
-### :link: Links
-* [Trello](https://trello.com/b/ToBkZnnr/unity-component-utilities)
 ### :thumbsup: License
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.png?v=103)](https://opensource.org/licenses/mit-license.php)
