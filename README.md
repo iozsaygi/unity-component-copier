@@ -17,8 +17,8 @@
     * _Sort the components on game object(s) with the available sorting options._
 ## Installation
 * Create new folder called **"Editor"** as a subfolder of your **"Scripts"** folder.
-* Import the [script](https://github.com/iozsaygi/unity-component-utilities/blob/master/unity-component-utilities/Assets/Scripts/Editor/UCU/ComponentUtilities.cs) into **"Editor"** folder that you just created.
+* Import the **[script](https://github.com/iozsaygi/unity-component-utilities/blob/master/unity-component-utilities/Assets/Scripts/Editor/UCU/ComponentUtilities.cs)** into **"Editor"** folder that you just created.
 ## Changelog
-View [here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md) for changelog.
+View **[here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md)** for changelog.
 ## License
-**U.C.U** is released under MIT License, please see [LICENSE](https://github.com/iozsaygi/unity-component-utilities/blob/master/LICENSE) file for details.
+**U.C.U** is released under MIT License, please see **[LICENSE](https://github.com/iozsaygi/unity-component-utilities/blob/master/LICENSE)** file for details.
