@@ -1,3 +1,9 @@
+## 15 January, 2020 (v1.7)
+* Added **shortcut** support.
+* Added undo **(CTRL + Z)** support.
+* Removed unnecessary features such as **sort**, **merge** and **separate**.
+* Started distributing with **.unitypackage** files.
+
 ## 14 August, 2019 (v1.6)
 * Added dialog messages to handle situations with errors.
 * Added new feature **"Paste As Child".**
