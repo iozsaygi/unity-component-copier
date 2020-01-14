@@ -3,7 +3,7 @@
 </p>
 
 ## About
-**U.C.U** allows you to perform handy operations for attached components on game objects.
+U.C.U allows you to perform handy operations for attached components on game objects.
 
 ## Installation
 * Check [distributions](https://github.com/iozsaygi/unity-component-utilities/tree/master/dists) page to download one of the available versions.
