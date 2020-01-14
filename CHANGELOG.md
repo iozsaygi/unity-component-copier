@@ -17,7 +17,8 @@
 private static float functionTriggerInterval = 0.0f;
 
 [MenuItem("BlaBla/VoVo/DoDo")]
-private static void YourEditorFunction() {
+private static void YourEditorFunction() 
+{
     if (Time.unscaledTime.Equals(functionTriggerInterval))
         return;
         
