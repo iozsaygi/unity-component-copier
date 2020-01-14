@@ -1,6 +1,6 @@
 ## 15 January, 2020 (v1.7)
 * Added **shortcut** support.
-* Added undo **(CTRL + Z)** support.
+* Added **undo** support.
 * Removed unnecessary features such as **sort**, **merge** and **separate**.
 * Started distributing with **.unitypackage** files.
 
