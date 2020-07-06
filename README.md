@@ -12,4 +12,4 @@ U.C.U allows you to perform handy operations for attached components on game obj
 ## Changelog
 View [here](https://github.com/iozsaygi/unity-component-copier/blob/master/CHANGELOG.md) for changelog.
 ## License
-U.C.U is released under MIT License, please see [LICENSE](https://github.com/iozsaygi/unity-component-utilities/blob/master/LICENSE) file for details.
+[MIT LICENSE](https://github.com/iozsaygi/unity-component-utilities/blob/master/LICENSE)
